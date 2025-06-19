@@ -80,8 +80,8 @@
           <div class="row">
             <div class="container-main single-main">
               <div class="col-md-12">
-                <div class="block-main mb-30"><!-- fix here -->
-                  <img class="blog-img-full" src="images/proj2/face.png" class="img-responsive" alt="reviews2">
+                <div class="block-main mb-30">
+                  <img class="blog-img-full" src="images/proj2/fer.png" class="img-responsive" alt="reviews2">
                   <div class="content-main single-post padDiv">
                     <div class="journal-txt">
                       <h1>Emotion recognition with Deep Learning</h1>
@@ -89,46 +89,49 @@
                     <div class="post-meta">
                       <ul class="list-unstyled mb-0">
                         <li class="author">by:<a href="#">Neelima Bollempalli</a></li>
-                        <!-- <li class="date">date:<a href="#">January, 2022</a></li> -->
-                        <!-- <li class="commont"><i class="ion-ios-heart-outline"></i><a href="#"></a></li> -->
                       </ul>
                     </div>
-                    <blockquote>Skin cancer is the most common cancer in the United States. Some people are at higher risk of skin cancer than others, but anyone can get it. The most preventable cause of skin cancer is overexposure to ultraviolet (UV) light, either from the sun or from artificial sources like tanning beds. Current imaging techniques provide meticulous anatomical delineation and are the principal tools for establishing that neurological symptoms are the consequence of a brain tumor.</blockquote>
-                    
-
-                    <h4>Aim of the Project</h4>
+                     
+                    <br>
+                    <h4>Overview</h4>
                     <p class="mb-30">
-                      Objective: Detect and classify skin cancer using Convolutional Neural Networks (CNN) with an aim to achieve 90% accuracy.
-                     <p></p> Significance: Early detection of skin cancer can significantly increase the survival rate. However, the early detection process is challenging and expensive.                    </p>
-
-                     <h4>Problem Definition</h4>
+                      The Emotion Recognition with Deep Learning project aimed to develop an intelligent system capable of identifying human emotions from facial expressions using advanced neural network architectures. By leveraging the FER-2013 dataset, the project adopted a data-driven approach to train deep learning models from scratch, focusing on accurately classifying emotions such as happiness, sadness, anger, and surprise. This initiative combined theoretical understanding with hands-on implementation, resulting in a real-time emotion detection pipeline powered by custom-built CNNs.</p>
+                    
+                     <h4>Dataset</h4>
                      <p class="mb-30">
-                      Overview: Skin cancer is the most prevalent cancer in the United States. Overexposure to UV light from the sun or tanning beds is the most preventable cause.
-                      <p></p> Current Techniques: Existing imaging techniques provide detailed anatomical delineation and are essential in identifying that neurological symptoms result from brain tumors.
-                    </p>
-                    <h4>Methodology-Convolutional Neural Network (CNN):
-                    </h4>
-                     <p class="mb-30">
-                      Definition: A CNN is a type of neural network with one or more convolutional layers, mainly used for image processing, classification, and segmentation.
-                      <p></p> Functionality: A convolution slides a filter over the input. Traditional neural networks aren't ideal for image processing as they require images in reduced-resolution pieces.
-
-                    </p>
-                  </p> Advantage: CNNs have neurons arranged like the frontal lobe, responsible for processing visual stimuli, allowing them to cover the entire visual field and avoid the piecemeal processing issue of traditional neural networks.
-
-
-                </p><!--fixhere-->
- 
-                    <img class="blog-img-full mb-30" src="images/proj2/face.png" class="img-responsive" alt="reviews2">
+                      The FER-2013 (Facial Expression Recognition 2013) dataset, a widely used benchmark in emotion detection research, was employed for model training and evaluation. It consists of over 35,000 labeled grayscale images of 48x48 pixels, each tagged with one of the seven emotional categories. The dataset ensured a data-driven and objective foundation for training the models.</p>
+                    <h4>Model Development</h4>
+                     
+                      To explore the performance of different architectural choices, the various versions of the following custom neural networks were developed and trained from scratch:
+                      <ul>
+                        <li><b>ResNet:</b> Introduced skip connections to ease the training of deeper networks by mitigating the vanishing gradient problem</li>
+                        <li><b>MobileNet:</b> A lightweight CNN optimized for mobile and embedded vision applications, using depthwise separable convolutions.</li>
+                        <li><b>EfficientNet:</b> A scalable model family that balances network depth, width, and resolution, offering high accuracy with fewer parameters.</li>
+                      </ul>
+                      Each model was trained using data augmentation techniques to improve generalization and prevent overfitting.
+                      <p></p>
+                    <h4>Implementation & Integration</h4>
+                      Beyond training, the project extended to real-world application by integrating the trained models with a live webcam interface. This allowed the system to:
+                      <ul>
+                        <li>Detect faces in real time using OpenCV.</li>
+                        <li>Preprocess and classify facial expressions into emotion categories.</li>
+                        <li>Overlay emotion predictions on video feeds dynamically.</li>
+                      </ul>
+                      The final trained models achieved over 90% accuracy on the FER-2013 dataset, demonstrating their effectiveness in classifying facial emotions.
+                      <p></p>
+                    <h4>Live Camera Feed Detection Results</h4>
+        
+                    <img class="blog-img-full mb-30" src="images/proj2/live_cam.png" class="img-responsive" alt="reviews2">
                    
                     
-  <!--  </div> -->
+
   <!-- start section main content -->
 
   <!-- start section footer -->
   <div id="footer" class="text-center">
     <div class="container">
       <div class="socials-media text-center">
-
+        Emotion recognition systems have valuable real-world applications across fields like healthcare, education, and human-computer interaction. By detecting subtle emotional cues, such systems can enhance user experiences—such as personalizing learning environments, supporting mental health monitoring, or enabling emotionally aware virtual assistants. Integrating this technology into everyday tools can make interactions more intuitive, responsive, and human-centered.
         <ul class="list-unstyled">
           <li><a href="https://www.linkedin.com/in/neelima-b-95b142217"><i class="ion-social-linkedin"></i></a></li>
 
