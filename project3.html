@@ -79,33 +79,31 @@
               <div class="col-md-12">
                 <div class="block-main mb-30">
                   <div class="content-main single-post padDiv">
-                    <div class="journal-txt"><!--fixhere-->
-                      <img class="blog-img-full" src="images/proj3/cred_graphic.png" class="img-responsive" alt="Credit Card Analysis">
+                    <div class="journal-txt">
+                      <img class="blog-img-full" src="images/proj3/cred_data.png" class="img-responsive" alt="Credit Card Analysis">
                       <h1>Credit Card Application Analysis</h1>
-                        <!-- <h2>Product design</h2> -->
-                      <div class="post-meta">
-                        <ul class="list-unstyled mb-0">
-                          <li class="author">by:<a href="#">Neelima Bollempalli</a></li>
-                          <!-- <li class="date">date:<a href="#">May, 2024</a></li> -->
-                          <!-- <li class="commont"><i class="ion-ios-heart-outline"></i> UX writing, UI-UX design, Research, Brand Design, Illustration, Prototype </li> -->
-                        </ul>
-                      </div>
-                      <br>
-                      <!-- <h3 class="highlight">"How might we make tourists feel <strong>like a carioca</strong> during the carnival in Rio de Janeiro ?" 
-                        <br>
-                        <strong>That was my dream to create carnaRio!</strong></h3> -->
+                    <div class="post-meta">
+                      <ul class="list-unstyled mb-0">
+                        <li class="author">by:<a href="#">Neelima Bollempalli</a></li>
+                      </ul>
+                    </div>
+                    <blockquote>Credit card providers must balance between approving more people and avoiding financial losses. If they are too lenient, they risk giving credit to those who might not repay. If they’re too strict, they lose good customers. Our project helps strike that balance by using data and patterns from past applications to predict outcomes for new ones.</blockquote>
+                    
 
-                    <!--fixhere-->
-                      <h4>Project Overview</h4>
-                      <p>I built a full-stack Airbnb clone to understand the concepts better. First, I set up the development environment. Then, I created the Navbar and authentication UI. I implemented registration and login functionality using MongoDB and Prisma, and added social login with Google and GitHub. Next, I developed the listing creation process with multiple steps including category selection, location mapping, image upload, and price setting. I created server components to fetch and display listings, and added favoriting and reservation features. Finally, I built user-specific screens for trips, reservations, favorites, and properties, integrated filtering options, and deployed the application to Vercel.
-
-
-
-
-
-                      </strong>.</p>
+                    <h4>Overview</h4>
+                    <p class="mb-30">
+                      This project focuses on helping credit card companies make better and faster decisions about who should be approved for a credit card. Every day, these companies receive thousands of applications and need a way to decide who is likely to repay the money they borrow. We used real application data to build a system that can predict whether an applicant is eligible for a credit card.
                       
-                      
+                     <h4>Dataset</h4>
+                     <p class="mb-30">
+                      We used a public dataset that included details like income, employment, age, education, housing, and family status of past applicants. We also looked at whether those people eventually managed to repay or not. This helped us train our system to learn from real-life cases.</p>
+                    <h4>Key Steps</h4>
+                     <p class="mb-30">
+                     In this project, we analyzed a large credit card application dataset to predict applicant eligibility using machine learning. The data was sourced from Kaggle and consisted of two separate tables containing applicant information and credit records. After merging the datasets using a common client ID, we curated a refined dataset with over 500,000 records and key features such as income, employment history, age, education, housing type, and previous credit behavior. We performed extensive data cleaning—removing duplicates, handling missing values (e.g., dropping entries with unknown occupation), and transforming raw values like days into readable units (e.g., years). Feature engineering was applied to derive new variables, such as employment status, and categorical data was encoded for model compatibility. We normalized numeric fields to ensure consistent scaling. For exploratory analysis, we used visual tools like histograms, box plots, and correlation heatmaps to identify important trends and relationships. Feature importance analysis using models like Random Forest revealed which attributes most strongly influenced approval outcomes—highlighting ‘MONTHS_BALANCE’ and employment duration as significant factors. </p>
+                    <h4>Insights</h4>
+                    <p>We found that some factors, like how long a person has been employed and their recent credit history, were strong indicators of whether they would repay their credit. Features like monthly balance played a big role in decision-making. We also saw that the data was not evenly spread, meaning some groups were under- or over-represented.</p>
+                    <img class="blog-img-full mb-30" src="images/proj3/graph_cred.png" class="img-responsive" alt="reviews2">
+                     
 
                       
 
@@ -127,7 +125,6 @@
   <div id="footer" class="text-center">
     <div class="container">
       <div class="socials-media text-center">
-
         <ul class="list-unstyled"><!--fixhere-->
           <li><a href="https://www.linkedin.com/in/neelima-b-95b142217"><i class="ion-social-linkedin"></i></a></li>
 
