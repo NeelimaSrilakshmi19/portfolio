@@ -79,7 +79,7 @@ $(document).ready(function() {
 
   $(function() {
     typed.typed({//<!--fixhere-->
-      strings: ["Neelima Srilakshmi Bollempalli","a Software Developer" ,"a Machine Learning Engineer", "an AI Expert", "a Data Scientist", "an SAP Consultant", "Curious", "Collaborative"],
+      strings: ["Neelima Srilakshmi Bollempalli", "a Python Developer", "a Machine Learning Engineer", "an AI Expert", "a Data Scientist", "an SAP Consultant", "Curious", "Collaborative"],
       typeSpeed: 40,
       loop: true,
     });
